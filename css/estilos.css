@@ -2,19 +2,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    
-    
-}
-
-
+}    
 #inicio{
     background-image: url("../images/fondo-contacto.png");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     
+}   
     
-    
-}
 #contacto {
     background-image: url("../images/fondo-contacto.png");
         background-size: cover;
@@ -32,23 +27,24 @@ body {
 .sponsor {
     color: white;
 }
-#inicio .btn:hover {
-    background-color: #370a6d;
-    border: 0px
-}
-.cohete {
+
+#inicio img {
     height: 400px;
-    padding: 0px 12px;
-    margin: 24px 0px 0px;
+    
 }
-.cohete:hover {
+#inicio img:hover{
     height: 410px;
-
 }
 
-
-
-
+.cohete{
+    height: 410px;
+}
+.dep {
+    color: white;
+}
+.yolimail {
+    color: white;
+}
 
 .proyecto {
     background-color: white;
@@ -99,13 +95,6 @@ border-radius: 10px;
 #proyectos footer ,#proyectos footer a{
 color: #ff4a49;
 }
-
-
-
-
-
-
-
 #proyectos footer .fa-github,#sobre-mi footer.fa-github{
     font-size: 30px;
     color: #ff4a49;
@@ -151,8 +140,6 @@ color: #ff4a49;
     width: 50px;
 
 }
-
-
 #proyectos .cv{
     background-color: #E20000;
     padding: 7px;
@@ -170,12 +157,7 @@ background-image: url("../images/fondo-contacto.png");
 background-size: cover;
 
 }
-#inicio img{
-    height: 400px;
-}
-#inicio img:hover{
-    height: 410px;
-}
+
 
 #inicio p{
     color: white;
@@ -184,10 +166,10 @@ background-size: cover;
     border: 1px white solid;
     font-weight: 600;
 
-
+}
     
 
-}
+
 #stack-tecnologico{
     background-color: #E20000;
 }
@@ -196,6 +178,7 @@ background-size: cover;
     background-color: white;
     border-radius: 15px;
     color: #370a6d;
+    border-radius: 15px;
 }
 #inicio .btn:hover{
     color: white;
@@ -210,16 +193,6 @@ background-size: cover;
     color: white;
     text-decoration: none;
 }
-
-
-#conoce:hover {
-    background-color: #370a6d;
-
-}
-
-
-
-
 
 h1{
     color: #E20000;
@@ -266,20 +239,16 @@ h1{
     color: white;
     
 }
-
-
-
-#contacto footer .fa-github {
-    font-size: 30px;
-    color: white;
-    
-    
-}
-#inicio footer .fa-github {
-    font-size: 30px;
+#inicio footer{
     color: white;
 }
 
+
+
+#contacto footer .fa-github #inicio footer .fa-github{
+    font-size: 30px;
+    color: white;
+}    
 #contacto footer .fa-linkedin-in{
     color: #ff4a49;
     background-color: white;
@@ -369,7 +338,7 @@ form input[type=text],form input[type=date],form input[type=tel],form input[type
     resize: none;
 }
 @media (max-width:750px) {
-    #contacto {
+#contacto {
         background-image: url("../images/fondo-proyectos.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -383,8 +352,7 @@ form input[type=text],form input[type=date],form input[type=tel],form input[type
         color:#E20000;
         font-size: 18px;
         border: 1px #E20000 solid;
-        
+}   
 
 
 
-}
