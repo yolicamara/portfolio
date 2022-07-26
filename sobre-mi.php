@@ -1,5 +1,5 @@
 <?php
-$pg
+$pg = "sobre-mi";
 ?>
 
 
