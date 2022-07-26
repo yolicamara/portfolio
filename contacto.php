@@ -1,3 +1,39 @@
+<?php
+$pg = "contacto";
+
+
+$nombre = $_POST["txtNombre"];
+$correo = $_POST["txtCorreo"];
+$telefono = $_POST["txtCorreo"];
+$mensaje = $_POST["txtMensaje"];
+
+//varios destinatarios
+$para = "yolicamara2@hotmail.com";
+$titulo = 'Recibiste un mensaje desde tu web';
+
+//mensaje
+$cuerpo = "
+Nombre: $nombre <br>
+Correo: $correo <br>
+Telefono: $telefono <br>
+Mensaje: $mensaje
+";
+
+//para enviar un correo HTML,debeestablecerse la cabecera content-type
+$cabeceras = 'MIME-Version 1.0'. "\r\n";
+$cabeceras .='Content-type: text/html; charset=UTF-8' . "\r\n";
+
+
+//cabeceras adicionales
+$cabeceras .= 'To: yolicamara2@hotmail.com' . "\r\n";
+$cabeceras .= 'From: contacto@yolandacamara.com.ar' ."\r\n";
+
+
+//enviarlo
+//mail($paraa $titulo $cuerpo, $cabeceras);
+header("Location:confirmacion-envio.php");
+
+?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
