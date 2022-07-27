@@ -1,11 +1,13 @@
 <?php
-$pg = "contacto";
 
-
+if($_POST){
 $nombre = $_POST["txtNombre"];
 $correo = $_POST["txtCorreo"];
 $telefono = $_POST["txtCorreo"];
 $mensaje = $_POST["txtMensaje"];
+if($nombre != "" && $correo != "" && $telefono != "" && $mensaje != ""){
+
+
 
 //varios destinatarios
 $para = "yolicamara2@hotmail.com";
@@ -26,14 +28,16 @@ $cabeceras .='Content-type: text/html; charset=UTF-8' . "\r\n";
 
 //cabeceras adicionales
 $cabeceras .= 'To: yolicamara2@hotmail.com' . "\r\n";
-$cabeceras .= 'From: contacto@yolandacamara.com.ar' ."\r\n";
+$cabeceras .= 'From: contacto@yolycamara.com.ar' ."\r\n";
 
 
 //enviarlo
 //mail($paraa $titulo $cuerpo, $cabeceras);
-header("Location:confirmacion-envio.php");
-
+header("Location:confirmacion_envio.php");
+}
+}
 ?>
+<?php $pg = "contacto" ?>
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
